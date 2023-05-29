@@ -41,6 +41,7 @@ import { DeliveryMethodComponent } from './delivery-method/delivery-method.compo
 import { PhotoWallComponent } from './photo-wall/photo-wall.component'
 import { DeluxeUserComponent } from './deluxe-user/deluxe-user.component'
 import { AccountingGuard, AdminGuard, LoginGuard } from './app.guard'
+import { ScoreBoardTwoComponent } from './score-board-two/score-board-two.component'
 
 // vuln-code-snippet start adminSectionChallenge scoreBoardChallenge
 const routes: Routes = [
@@ -159,6 +160,10 @@ const routes: Routes = [
     path: 'score-board', // vuln-code-snippet vuln-line scoreBoardChallenge
     component: ScoreBoardComponent // vuln-code-snippet neutral-line scoreBoardChallenge
   }, // vuln-code-snippet neutral-line scoreBoardChallenge
+  {
+    path: 'score-board-two',
+    component: ScoreBoardTwoComponent
+  },
   {
     path: 'track-result',
     component: TrackResultComponent

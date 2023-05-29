@@ -137,6 +137,7 @@ import { CodeSnippetComponent } from './code-snippet/code-snippet.component'
 import { CodeAreaComponent } from './code-area/code-area.component'
 import { NgxTextDiffModule } from 'ngx-text-diff'
 import { CodeFixesComponent } from './code-fixes/code-fixes.component'
+import { ScoreBoardTwoComponent } from './score-board-two/score-board-two.component'
 
 export function HttpLoaderFactory (http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json')
@@ -199,7 +200,8 @@ export function HttpLoaderFactory (http: HttpClient) {
     FeedbackDetailsComponent,
     CodeSnippetComponent,
     CodeAreaComponent,
-    CodeFixesComponent
+    CodeFixesComponent,
+    ScoreBoardTwoComponent,
   ],
   imports: [
     BrowserModule,
@@ -256,7 +258,7 @@ export function HttpLoaderFactory (http: HttpClient) {
     MatSlideToggleModule,
     MatChipsModule,
     NgxTextDiffModule,
-    HighlightModule
+    HighlightModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
